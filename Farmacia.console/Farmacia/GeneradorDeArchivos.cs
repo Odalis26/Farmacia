@@ -14,22 +14,11 @@ namespace GestionFarmacia
             var datosEmpresaRaiz = $"<id>{empresaRaiz.EmpresaId}</id>" +
             $"<nombre>{empresaRaiz.Nombre} </nombre> " +
             $"<ruc>{empresaRaiz.Ruc}</ruc> " +
-            $"<telefono>{empresaRaiz.Telefono}</telefono";
+            $"<telefono>{empresaRaiz.Telefono}</telefono>";
             for (int i = 0; i < empresaRaiz.Empresas.Count; i++)
             {
-                empresas += $"<empresa{i}><id>{empresaRaiz.Empresas[i].EmpresaId}</id>" +
-                   $"<nombre>{empresaRaiz.Empresas[i].Nombre} </nombre> " +
-                   $"<ruc>{empresaRaiz.Empresas[i].Ruc}</ruc> " +
-                   $"<telefono>{empresaRaiz.Empresas[i].Telefono}</telefono>" +
-                   $"<farmacias>{farmacias}</farmacias></empresa{i}>";
                 for (int z = 0; z < empresaRaiz.Empresas[i].Farmacias.Count; z++)
                 {
-                    farmacias += $"<farmacia{z}><nombre>{empresaRaiz.Empresas[i].Farmacias[z].Nombre}</nombre>" +
-                        $"<telefono>{empresaRaiz.Empresas[i].Farmacias[z].Telefono}</telefono>" +
-                        $"<clientes>{clientes}</clientes>" +
-                        $"<vendedores>{vendedores}</vendedores>" +
-                        $"<productos>{productos}</productos>" +
-                        $"</farmacia{z}>";
                     if (empresaRaiz.Empresas[i].Farmacias[z].Clientes != null)
                     {
                         for (int a = 0; a < empresaRaiz.Empresas[i].Farmacias[z].Clientes.Count; a++)
@@ -54,7 +43,18 @@ namespace GestionFarmacia
                                 $"<precio>{empresaRaiz.Empresas[i].Farmacias[z].Productos[c].Precio}</precio></producto{c}>";
                         }
                     }
+                    farmacias += $"<farmacia{z}><nombre>{empresaRaiz.Empresas[i].Farmacias[z].Nombre}</nombre>" +
+                        $"<telefono>{empresaRaiz.Empresas[i].Farmacias[z].Telefono}</telefono>" +
+                        $"<clientes>{clientes}</clientes>" +
+                        $"<vendedores>{vendedores}</vendedores>" +
+                        $"<productos>{productos}</productos>" +
+                        $"</farmacia{z}>";
                 }
+                empresas += $"<empresa{i}><id>{empresaRaiz.Empresas[i].EmpresaId}</id>" +
+                   $"<nombre>{empresaRaiz.Empresas[i].Nombre} </nombre> " +
+                   $"<ruc>{empresaRaiz.Empresas[i].Ruc}</ruc> " +
+                   $"<telefono>{empresaRaiz.Empresas[i].Telefono}</telefono>" +
+                   $"<farmacias>{farmacias}</farmacias></empresa{i}>";
             };
 
             var archivo = $"{ruta}\\{empresaRaiz.Nombre.Replace(" ", string.Empty)}.xml";
