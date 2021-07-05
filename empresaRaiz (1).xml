@@ -1,0 +1,2 @@
+<? xml version = "1.0" enconping = "UTF-8"?>
+<empresaRaiz><id>0</id><nombre>empresaRaiz </nombre> <ruc></ruc> <telefono></telefono<empresas><empresa0><id>0</id><nombre>HospiMedica </nombre> <ruc>1234567001</ruc> <telefono>02-2546985</telefono><farmacias></farmacias></empresa0></empresas></empresaRaiz>
