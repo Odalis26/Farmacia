@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USER\\source\\repos\\Farmacia.console\\Farmacia\\Farmacia.csproj": {}
+    "C:\\Users\\USER\\source\\repos\\consolaInicial\\Farmacia.console\\Farmacia\\Farmacia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USER\\source\\repos\\Farmacia.console\\Farmacia\\Farmacia.csproj": {
+    "C:\\Users\\USER\\source\\repos\\consolaInicial\\Farmacia.console\\Farmacia\\Farmacia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\Farmacia.console\\Farmacia\\Farmacia.csproj",
+        "projectUniqueName": "C:\\Users\\USER\\source\\repos\\consolaInicial\\Farmacia.console\\Farmacia\\Farmacia.csproj",
         "projectName": "Farmacia",
-        "projectPath": "C:\\Users\\USER\\source\\repos\\Farmacia.console\\Farmacia\\Farmacia.csproj",
+        "projectPath": "C:\\Users\\USER\\source\\repos\\consolaInicial\\Farmacia.console\\Farmacia\\Farmacia.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USER\\source\\repos\\Farmacia.console\\Farmacia\\obj\\",
+        "outputPath": "C:\\Users\\USER\\source\\repos\\consolaInicial\\Farmacia.console\\Farmacia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
