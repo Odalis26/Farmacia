@@ -9,6 +9,8 @@
 @import url(css/font-awesome.min.css);
 @import url(css/custom-icon.css);
 @import url(css/classy-nav.min.css);
+
+#cabecera {height: 150px; width: 250px;}
 /* :: 3.0 Base CSS */
 * {
   margin: 0;
